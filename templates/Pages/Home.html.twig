@@ -1,22 +1,23 @@
 {% extends "base.html.twig" %}
 
 {% block title %}
-	Hello country
+	Hello France !
 {% endblock %}
 
 {% block body %}
 
-	<h1>Salut </h1>
+	<img src=" {{ asset('assets/img/flag.png') }} " alt="drapeau français" class="mt-12 rounded shadow-md">
 
-	<p>It's currently
+	<h1 class="mt-10 text-6xl font-semibold">
+		<span class="text-blue-800">Hello</span>
+		<span class="text-gray-400">France</span>
+		<span class="text-red-500">&hearts;</span>
+	</h1>
+
+	<p class="mt-5 text-2xl text-gray-800">
+		It's currently
 		{{'now'|date('H:i d/m/Y', 'Europe/Paris')}}.
 	</p>
 
-	<footer>
-		<p>&copy; Copyright
-			{{'now'|date('Y')}}
-			&middot;
-			<a href="https://github.com/TheGeogeo">TheGeogeo</a>
-		</p>
-	</footer>
+
 {% endblock %}
