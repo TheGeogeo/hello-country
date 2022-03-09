@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+	Hello country
+{% endblock %}
+
+{% block body %}
+
+	<h1>Salut </h1>
+
+	<p>It's currently
+		{{'now'|date('H:i d/m/Y', 'Europe/Paris')}}.
+	</p>
+
+	<footer>
+		<p>&copy; Copyright
+			{{'now'|date('Y')}}
+			&middot;
+			<a href="https://github.com/TheGeogeo">TheGeogeo</a>
+		</p>
+	</footer>
+{% endblock %}
