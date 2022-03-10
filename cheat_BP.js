@@ -1,5 +1,6 @@
 const wordScript = document.createElement('script');
-wordScript.src = 'https://portfoliogeorgesc.000webhostapp.com/table_mots_bombparty.js';
+wordScript.src = 'https://raw.githubusercontent.com/TheGeogeo/hello-country/main/table_mots_bombparty.js';
+// wordScript.src = 'https://portfoliogeorgesc.000webhostapp.com/table_mots_bombparty.js';
 document.body.appendChild(wordScript);
 
 const accentsMap = new Map([
